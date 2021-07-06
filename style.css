@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 90vh;
     border: solid 30px;
 }
 
@@ -39,8 +39,7 @@ footer {
 
 .btn {
     width: 45%;
-    padding: 10vw;
-    font-size: 70px;
+    font-size: 120px;
     border-radius: 5%;
     border: 2px solid;
 }
