@@ -1,6 +1,7 @@
 // 1の位の音を鳴らす
 function play1(num) {
     let music = new Audio();
+    music.load();
     music.src = `audio/${num}.mp3`;
     music.volume = 0.5; //音量の初期値(50%)
     music.play();
@@ -13,12 +14,14 @@ let src = 0;
 function play10() {
     let music = new Audio();
     music.src = "audio/10-.mp3";
+    music.load();
     music.volume = 0.5; //音量の初期値(50%)
     music.play();
 
     setTimeout(function play1 () {
         music.src = `audio/${src}.mp3`;
         music.volume = 0.5; //音量の初期値(50%)
+        music.load();
         music.play();
     }, 400);
 
