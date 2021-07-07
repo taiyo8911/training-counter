@@ -7,8 +7,12 @@
     letter-spacing: 3px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 body {
-    height: 90vh;
+    height: 80vh;
     border: solid 30px;
 }
 
@@ -29,7 +33,7 @@ footer {
     font-weight: bold;
 }
 
-.row50 {
+.flex {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -38,14 +42,11 @@ footer {
 }
 
 .btn {
-    width: 45%;
-    font-size: 120px;
+    width: 10rem;
+    height: 8rem;
+    font-size: 4rem;
     border-radius: 5%;
     border: 2px solid;
-}
-
-h1{
-    font-size: 100%;
 }
 
 .st-btn {
@@ -56,10 +57,31 @@ h1{
     background-color: pink;
 }
 
-button:hover {
-    cursor: pointer;
+@media screen and (min-width: 721px) {
+    html {
+        font-size: 75%;
+    }
+    body{
+        font-size: 2rem;
+        height: 100vh;
+    }
+    .num {
+        font-size: 12rem;
+    }
 }
 
-.num {
-    font-size: 120px;
+@media screen and (max-width: 720px) {
+    html {
+        font-size: 62.5%;
+    }
+    body{
+        font-size: 2rem;        height: 80vh;
+        height: 80vh;
+    }
+    h1 {
+        font-size: 100%;
+    }
+    .num {
+        font-size: 12rem;
+    }
 }
