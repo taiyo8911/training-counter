@@ -1,3 +1,11 @@
+var music = document.getElementById("music");
+var button = document.getElementById("playButton");
+
+// button.addEventListener("click", function () {
+//     music.load();
+// }, false);
+
+
 // カウントダウンの初期値を設定する
 // 初期値をnumに格納
 
@@ -15,7 +23,6 @@ function displayNum() {
 
 // 1の位の音を鳴らす
 function play() {
-    let music = new Audio();
     music.src = `audio/${no}.mp3`;
     music.volume = 0.5; //音量の初期値(50%)
     music.play();
@@ -29,7 +36,7 @@ function play10() {
     music.play();
 
     setTimeout(function () {
-        music.src = `audio/${no-10}.mp3`;
+        music.src = `audio/${no - 10}.mp3`;
         music.volume = 0.5; //音量の初期値(50%)
         music.play();
     }, 400);
@@ -86,11 +93,13 @@ function under10() {
 // 「始」ボタンが押された時の処理
 function start() {
     if (input > 10) {
+        music.load();
         no = input;
         over10();
     }
 
     else {
+        music.load();
         no = input;
         under10(no);
     }

@@ -26,15 +26,21 @@
         </section>
 
         <section id="btns" class="flex">
-            <button class="btn st-btn" onclick="start(), disabled = true;">始</button>
-            <button class="btn re-btn" onclick="location.reload()">止</button>
+            <button id="playButton" class="btn st-btn" onclick="start(), disabled = true;">始</button>
+            <button id="stopbutton" class="btn re-btn" onclick="stop(), location.reload()">止</button>
         </section>
     </main>
 
     <footer>
         <span>10年後はボブサップ</span>
     </footer>
+
+    <audio id="music"></audio>
+
+
+
     <script src="script.js"></script>
+    <!-- <script src="sub3.js"></script> -->
 </body>
 
 </html>
